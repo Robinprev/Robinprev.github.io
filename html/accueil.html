@@ -3,26 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Site Vitrine</title>
+  <title>Vétérinaire Delteil</title>
   <link rel="stylesheet" href="../css/style.css">
   <script src="../js/script.js" defer></script>
-
+  <!-- CaptainVet Widget -->
+  <script type="text/javascript"> 
+  (function(w,d,s,u,g,a,b){w['CaptainVetObject']=g;w[g]=w[g]||function(){
+  (w[g].q=w[g].q||[]).push(arguments)};a=d.createElement(s),
+  b=d.getElementsByTagName(s)[0];a.async=1;a.src=u;b.parentNode.insertBefore(a,b)
+  })(window,document,'script','//website.captainvet.com/943f4952-1df2-4a47-aef8-b0b67cbbb974/cptvet.js','cptvet')
+  </script>
 </head>
 <body>
   <div id="header"></div>
 
   <!-- Section Accueil -->
   <section id="accueil" class="hero">
-    <div class="hero-content">
-      <h2>Cabinet médico-chirurgical du Dr Valérie Delteil	</h2>
+    <div class="hero-text">
+      <h1>Cabinet médico-chirurgical du <br>Dr Valérie Delteil	</h1>
+    </div>
+    <div class="hero-image">
+      <img src="../imgs/val et laeti.png" alt="Cabinet vétérinaire">
     </div>
   </section>
 
   <main class="container">
   <!-- Coordonnées -->
-  <section class="contact-info">
+  <section class="contact" id="Contact">
     <h2>Coordonnées</h2>
-    <p><strong>Adresse :</strong> 6 bis avenue de la belle image, 94440 Marolles en Brie</p>
+    <p><strong>Adresse :</strong> <a href="#Acces">6 bis avenue de la belle image, 94440 Marolles en Brie</a></p>
     <p><strong>Email :</strong> <a href="mailto:vdelteil94440@gmail.com">vdelteil94440@gmail.com</a></p>
     <p><strong>Téléphone :</strong> <a href="tel:+33695982244">06 95 98 22 44</a></p>
     <p><strong>Horaires :</strong> Uniquement sur rendez-vous  
@@ -30,39 +39,98 @@
     </p>
   </section>
 
-  <!-- Comment venir -->
-  <section class="access">
-    <h2>Comment venir</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>🚗 En voiture</h3>
-        <p>Places de parking non payantes juste devant le cabinet et une place réservée aux clients.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d784.9038263721377!2d2.545167220423835!3d48.73160922471682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6096d383a3959%3A0x80f566c7db02df62!2sCabinet%20m%C3%A9dico-chirurgical%20v%C3%A9t%C3%A9rinaire%20du%20Dr%20Val%C3%A9rie%20Delteil!5e0!3m2!1sfr!2sfr!4v1755598281420!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="card">
-        <h3>🚉 En transport</h3>
-        <p>RER A Boissy Saint Léger puis bus 451 en direction de « Servon-Eden », arrêt « La Belle Image » juste devant le cabinet vétérinaire.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- Urgences -->
-  <section class="emergency">
+  <section class="urgences" id="Urgences">
     <h2>🚨 Urgences</h2>
     <p>En cas d’urgence, téléphonez à <strong>Vétalia (service d’urgence à domicile)</strong> :  
       <a href="tel:+33140400102">01 40 40 01 02</a>
-    </p>
+    </p>  
     <p>Ou allez au <strong>Centre hospitalier Vétérinaire Frégis</strong> à Arcueil.</p>
   </section>
 
-  <!-- Réseaux sociaux -->
-  <section class="socials">
-    <h2>Suivez-nous</h2>
-    <div class="social-buttons">
-      <a href="https://www.facebook.com/cabinetveterinairedelteil?locale=fr_FR" target="_blank"><img src="../imgs/facebook_logo.png" alt="Logo_fb" class="logo"></a>
-      <a href="https://instagram.com" target="_blank"><img src="../imgs/insta_logo.png" alt="Logo_insta" class="logo"></a>
-
-    </div>
+  <!-- Présentation -->
+  <section class="presentation" id="Presentation">
+    <h2>Un cabinet vétérinaire proche de vous et de vos animaux !</h2>
+    <p>Le Docteur Valérie Delteil et son équipe sont heureux de vous accueillir depuis 2022 sur Marolles-en-Brie dans le Val-de-Marne. Nous assurons les consultations de médecine générale,
+    de médecine préventive, de comportement, les hospitalisations et les chirurgies sur place. <br><br> Nous avons pensé cette structure 
+     vétérinaire pour assurer tous les soins courants mais avec des coûts abordables pour tous les propriétaires et aussi avec de nombreuses 
+     aides financières possibles en plus pour les personnes avec peu de ressources ou pour les personnes s’occupant de chats errants.<br><br>Nous sommes de plus ravis de travailler avec de très nombreux éleveurs auprès de qui nous assurons les suivis classiques ainsi que les césariennes quand cela est possible même en dehors de nos horaires d’ouverture et avec de nombreuses facilités.
+    </p>  
   </section>
+
+  <!-- Actualités -->
+  <section class="actualites" id="Actualites">
+    <h2>Actualités</h2>
+  <details class="actu" open>
+    <summary>Nouveau service : coproscopie sur place</summary>
+    <div class="actu-body">
+      <div>
+        <p>Le cabinet s’est équipé d’un appareil pour réaliser les coproscopies sur place. Si vous souhaitez savoir si vos animaux ont des vers ou si votre animal a de la diarrhée sans raison, emmenez-nous 2 grosses cuillères à soupe de leurs selles et en 15 mn, la machine les analysera et détectera le moindre vers ou œuf présent et nous vous donnerons alors le traitement adéquat.<br><br>
+Cette machine s’appelle un OvaCyte et elle détecte les parasites suivants :<br>
+-          Les Ankylostomes (Ancylostoma spp., Uncinaria stenocephela)<br>
+-          Les Ascarides (Toxocara canis, Toxascaris leonina, Toxocara cati)<br>
+-          Les Trichocéphales (Trichuris vulpis, Capillaria aerophilus)<br>
+-          Les  Coccidies (Cystoisospora spp.)<br>
+-          Les Ténias (Taenia spp.)<br><br>
+Le prix de cet examen au cabinet est de 22€.</p>
+      </div>
+    </div>
+  </details>
+  </section>
+
+  <!-- Accès -->
+  <section class="access" id="Acces">
+  <h2>Comment venir</h2>
+  <div class="access-container">
+    <!-- Carte intégrée Google Maps -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1117.168656574598!2d2.5454545961811728!3d48.73161195615586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6096d383a3959%3A0x80f566c7db02df62!2sCabinet%20m%C3%A9dico-chirurgical%20v%C3%A9t%C3%A9rinaire%20du%20Dr%20Val%C3%A9rie%20Delteil!5e0!3m2!1sfr!2sfr!4v1755603755313!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Directions et détails d'accès -->
+    <div class="access-details">
+      <div class="subaccess">
+        <h3>🚗 En voiture</h3>
+        <p>Parking gratuit juste devant le cabinet, avec une place réservée aux clients.</p>
+      </div>  
+      <div class="subaccess">
+        <h3>🚉 En transports en commun</h3>
+        <p>RER A jusqu’à Boissy-Saint-Léger, puis bus 451 en direction de « Servon-Eden », arrêt « La Belle Image » juste devant le cabinet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Boutons -->
+<section class="boutons" id="Boutons">
+  <h2>En savoir plus</h2>
+  <div class="boutons-container">
+    <a href="https://www.facebook.com/cabinetveterinairedelteil?locale=fr_FR" target="_blank">
+      <figure>
+        <img src="../imgs/facebook_logo.png" alt="Facebook" class="logo">
+        <figcaption>Facebook</figcaption>
+      </figure>
+    </a>
+    <a href="../html/equipe.html">
+      <figure>
+        <img id="img_equipe" src="../imgs/logo-equipe.png" alt="Équipe" class="logo">
+        <figcaption>Notre équipe</figcaption>
+      </figure>
+    </a>
+    <a href="../html/tarifs.html">
+      <figure>
+        <img id="img_tarifs" src="../imgs/logo-tarifs.png" alt="Tarifs" class="logo">
+        <figcaption>Les tarifs</figcaption>
+      </figure>
+    </a>
+    <a href="../html/conseils.html">
+      <figure>
+        <img id="img_conseils" src="../imgs/logo-fiches.png"  alt="Conseils" class="logo">
+        <figcaption>Les conseils</figcaption>
+      </figure>
+    </a> 
+  </div>
+</section>
+
 </main>
 
   <div id="footer"></div>
